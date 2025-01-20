@@ -13,8 +13,8 @@ class Category extends Model
         'type',
         'img',
     ];
-     
-    public function product(){
+
+    public function products(){
         return $this->hasMany(Product::class,'categorie_id');
     }
 }
